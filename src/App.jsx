@@ -1,13 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
 import "./App.css";
 import { Loading } from "./Loading";
 import { Menu } from "./Menu";
+import { Projects } from "./Projects";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -24,7 +24,14 @@ function App() {
       <AnimatePresence mode="wait">
         {showMenu ? (
           <motion.div key="main-menu">
-            <Menu isHovered={isHovered} setIsHovered={setIsHovered} />
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Menu />} />
+                <Route path="/about" element={<div>about</div>} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<div>contact</div>} />
+              </Routes>
+            </BrowserRouter>
           </motion.div>
         ) : (
           <Loading />
