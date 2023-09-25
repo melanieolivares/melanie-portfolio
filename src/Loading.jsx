@@ -11,8 +11,10 @@ export const Loading = () => (
       <div className="h-screen flex flex-col place-items-center place-content-center text-center">
         <img src={"src/assets/MelanieLogo.png"} />
         <div className="text-white">
-          <h1 className="text-8xl leading-25 ">melanie&#39;s</h1>
-          <h2 className="text-4xl font-extralight">creations</h2>
+          <h1 className="text-8xl leading-25 font-medium">melanie&#39;s</h1>
+          <h2 className="text-6xl font-extralight italic tracking-widex1">
+            creations
+          </h2>
         </div>
       </div>
     }

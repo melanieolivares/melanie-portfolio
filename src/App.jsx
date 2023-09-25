@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { Loading } from "./Loading";
 import { Menu } from "./Menu";
+import { About } from "./About";
 import { Projects } from "./Projects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,7 +13,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowMenu(true);
-    }, 2500);
+    }, 2000);
 
     return () => {
       clearTimeout(timer);
@@ -27,7 +28,7 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Menu />} />
-                <Route path="/about" element={<div>about</div>} />
+                <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<div>contact</div>} />
               </Routes>
