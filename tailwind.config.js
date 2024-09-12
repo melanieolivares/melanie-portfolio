@@ -2,7 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "#0F0F10",
+        accent: "#AEC1FF",
+        text: "#FAF9F6",
+      },
+    },
     letterSpacing: {
       tightest: "-.075em",
       tighter: "-.05em",
