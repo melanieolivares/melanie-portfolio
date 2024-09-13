@@ -4,6 +4,8 @@ import Sparkles from "../Components/Sparkles";
 import useSound from "use-sound";
 import boopSfx from "../assets/click-21156.mp3";
 import { TITLE_ID } from "../framerlayoutids";
+import melanie from "../assets/melaniesitting.png";
+import chikis from "../assets/chikisdrawing.png";
 
 export const About = () => {
   const [play] = useSound(boopSfx, { volume: 0.25 });
@@ -38,12 +40,12 @@ export const About = () => {
 
         <div className="flex">
           <img
-            src="../src/assets/melaniesitting.png"
+            src={melanie}
             alt="Melanie Sitting"
             className="fixed bottom-24 right-60 max-lg:w-32 max-sm:right-48"
           />
           <img
-            src="../src/assets/chikisdrawing.png"
+            src={chikis}
             alt="Melanie's dog Chikis"
             className="absolute bottom-24 right-96 w-28 max-lg:w-24 max-sm:right-72"
           />
