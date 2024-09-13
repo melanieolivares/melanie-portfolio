@@ -43,21 +43,22 @@ export const Menu = () => {
               full-stack web developer
             </h2>
             <div className=" pt-20 max-w-2xl max-md:max-w-md max-sm:max-w-sm">
-              <div className="pb-4 text-3xl max-md:text-2xl">Hi, I'm Mel.</div>
+              <div className="pb-4 text-2xl font-semibold max-md:text-xl">
+                hi, i'm mel.
+              </div>
               <div className="text-lg max-md:text-base">
-                {" "}
                 I’m a computer science student at the University of Southern
-                California. Checkout some of{" "}
+                California. Checkout some of&nbsp;
                 <Link
-                  className="underline hover:text-accent/75"
+                  className="underline hover:text-accent/75 transition-colors duration-300 ease-in-out"
                   to={"/projects"}
                   onClick={() => play()}
                 >
                   my projects
-                </Link>{" "}
-                and learn more &nbsp;
+                </Link>
+                &nbsp;and learn more&nbsp;
                 <Link
-                  className="underline hover:text-accent/75"
+                  className="underline hover:text-accent/75 transition-colors duration-300 ease-in-out"
                   onClick={() => play()}
                   to={"/about"}
                 >
