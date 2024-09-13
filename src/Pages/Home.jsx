@@ -48,11 +48,19 @@ export const Menu = () => {
                 {" "}
                 I’m a computer science student at the University of Southern
                 California. Checkout some of{" "}
-                <Link className="underline" to={"/projects"}>
+                <Link
+                  className="underline hover:text-accent/75"
+                  to={"/projects"}
+                  onClick={() => play()}
+                >
                   my projects
                 </Link>{" "}
                 and learn more &nbsp;
-                <Link className="underline" to={"/about"}>
+                <Link
+                  className="underline hover:text-accent/75"
+                  onClick={() => play()}
+                  to={"/about"}
+                >
                   about me
                 </Link>
                 .
