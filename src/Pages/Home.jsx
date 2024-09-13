@@ -29,11 +29,11 @@ export const Menu = () => {
   return (
     <>
       <Holidays />
-      <div>
-        <div className="text-white h-screen flex flex-col items-center justify-center">
+      <div className="w-full flex justify-center items-center px-4">
+        <div className="text-white h-screen w-fit flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">
             <motion.h1
-              className="text-8xl font-bold w-fit max-md:text-6xl max-sm:text-4xl"
+              className="text-8xl font-bold w-fit max-md:text-6xl max-sm:text-5xl"
               layout={true}
               layoutId={FramerConstants.TITLE_ID}
             >
@@ -42,17 +42,12 @@ export const Menu = () => {
             <h2 className="text-4xl text-accent/75 font-bold w-fit max-md:text-3xl max-sm:text-2xl">
               full-stack web developer
             </h2>
-            <div>
-              <div className="pt-20">
-                <div className="pb-4 text-2xl">Hi, I'm Mel.</div>
-                <div>
-                  {" "}
-                  I’m a computer science student at the University of Southern
-                  California.
-                </div>
-              </div>
-              <div className="">
-                Checkout some of{" "}
+            <div className=" pt-20 max-w-2xl max-md:max-w-md max-sm:max-w-sm">
+              <div className="pb-4 text-3xl max-md:text-2xl">Hi, I'm Mel.</div>
+              <div className="text-lg max-md:text-base">
+                {" "}
+                I’m a computer science student at the University of Southern
+                California. Checkout some of{" "}
                 <Link className="underline" to={"/projects"}>
                   my projects
                 </Link>{" "}
@@ -62,6 +57,7 @@ export const Menu = () => {
                 </Link>
                 .
               </div>
+              <div className="text-lg max-md:text-base"></div>
             </div>
           </div>
 
