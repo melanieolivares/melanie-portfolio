@@ -1,15 +1,15 @@
 import gif from "../assets/shopSmartShort-ezgif.com-speed.gif";
 export default function ProjectPreview({ name, github, websiteurl, imgsrc }) {
   return (
-    <siv className="w-7/12">
+    <div className="w-8/12 pb-16">
       <img src={gif} alt={name} className="w-full" />
-      <div className="w-full flex flex-row justify-between pt-3">
-        <h2 className="text-2xl font-bold text-text">{name}</h2>
+      <div className="w-full flex flex-col items-center justify-between pt-3">
+        <h2 className="text-2xl font-bold text-text max-md:text-xl">{name}</h2>
         <div className="pt-2 flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 97.707 97.707"
-            className="h-7 pr-3 hover:cursor-pointer"
+            className="h-7 hover:cursor-pointer"
             onClick={() => {
               window.open(github, "_blank");
             }}
@@ -21,6 +21,7 @@ export default function ProjectPreview({ name, github, websiteurl, imgsrc }) {
               className="fill-accent/75"
             />
           </svg>
+          <div className="px-3 text-text text-2xl">·</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -40,6 +41,6 @@ export default function ProjectPreview({ name, github, websiteurl, imgsrc }) {
           </svg>
         </div>
       </div>
-    </siv>
+    </div>
   );
 }

@@ -18,8 +18,8 @@ export const Projects = () => {
   const [play] = useSound(boopSfx, { volume: 0.25 });
 
   return (
-    <>
-      <nav className="flex justify-between mt-10">
+    <div className="h-screen">
+      <nav className="flex justify-between pt-10">
         <motion.div layout={true} layoutId={TITLE_ID}>
           <Link
             to={`/`}
@@ -31,7 +31,7 @@ export const Projects = () => {
         </motion.div>
         <div className="text-text pr-24 font-medium text-xl">projects</div>
       </nav>
-      <div className="w-full h-full flex flex-col justify-center items-center pt-16">
+      <div className="w-full h-full flex flex-col justify-center items-center">
         {projectData.map((project) => (
           <ProjectPreview
             name={project.name}
@@ -63,6 +63,6 @@ export const Projects = () => {
           </svg>
         </Link>
       </footer>
-    </>
+    </div>
   );
 };
