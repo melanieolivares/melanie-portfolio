@@ -6,7 +6,7 @@ export default function Footer() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 97.707 97.707"
-            className="h-8 hover:cursor-pointer group-hover:fill-accent"
+            className="h-8 hover:cursor-pointer group-hover:fill-accent max-md:h-7 max-sm:h-6"
             onClick={() => {
               window.open("https://github.com/melanieolivares", "_blank");
             }}
@@ -22,11 +22,11 @@ export default function Footer() {
           </svg>
         </div>
 
-        <div className="px-3 text-text text-2xl">·</div>
+        <div className="px-3 text-text text-2xl max-sm:text-xl">·</div>
 
         <div className="group">
           <svg
-            className="w-8 hover:cursor-pointer group-hover:fill-accent"
+            className="w-8 hover:cursor-pointer group-hover:fill-accent max-md:h-7 max-sm:h-6"
             viewBox="0 0 72 72"
             xmlns="http://www.w3.org/2000/svg"
             onClick={() => {

@@ -6,7 +6,6 @@ import useSound from "use-sound";
 import boopSfx from "../assets/click-21156.mp3";
 import * as FramerConstants from "../framerlayoutids";
 import Footer from "../Components/HomeFooter";
-
 const links = [
   {
     name: "about",
@@ -46,7 +45,7 @@ export const Menu = () => {
               <div className="pb-4 text-2xl font-semibold max-md:text-xl">
                 hi, i'm mel.
               </div>
-              <div className="text-lg max-md:text-base">
+              <div className="text-base max-md:text-sm">
                 I’m a computer science student at the University of Southern
                 California. Checkout some of&nbsp;
                 <Link
@@ -66,7 +65,6 @@ export const Menu = () => {
                 </Link>
                 .
               </div>
-              <div className="text-lg max-md:text-base"></div>
             </div>
           </div>
 
