@@ -25,14 +25,14 @@ export const About = () => {
         <div className="text-text pr-24 font-medium text-xl">about</div>
       </nav>
       <div className="flex flex-col place-items-center justify-center pt-32">
-        <h1 className="text-text font-semibold text-3xl w-6/12 pb-12 mx-auto max-sm:text-2xl max-sm:w-7/12">
+        <h1 className="text-text font-semibold text-4xl w-6/12 pb-12 mx-auto max-sm:text-3xl max-sm:w-7/12">
           Hi, I&#39;m{" "}
           <Sparkles>
             <span className="text-accent/75">Melanie</span>.
           </Sparkles>
         </h1>
 
-        <p className="text-text font-light text-lg w-6/12 leading-10 max-w-prose text-text/80 mx-auto max-md:text-base max-sm:w-7/12 max-sm:text-sm">
+        <p className="text-text font-light text-xl w-6/12 leading-10 max-auto text-text/80 mx-auto max-md:text-lg max-sm:w-7/12 max-sm:text-base">
           I’m a CSS enjoyer having fun with creating websites. Good ol’ media
           queries (...mmm, I might be using Tailwind). I love experimenting with
           and learning about new tech. And, I really like running!
@@ -41,12 +41,12 @@ export const About = () => {
           <img
             src={melanie}
             alt="Melanie Sitting"
-            className="absolute bottom-24 right-60 w-32 max-lg:w-28 max-md:w-24 max-sm:w-20 max-sm:right-48 max-lg:bottom-20"
+            className="absolute bottom-24 right-60 w-32 max-lg:w-28 max-md:w-24 max-sm:w-20 max-sm:right-48"
           />
           <img
             src={chikis}
             alt="Melanie's dog Chikis"
-            className="absolute bottom-24 right-96 w-28 max-lg:w-24 max-md:w-24 max-sm:w-20 max-sm:right-72 max-lg:bottom-20"
+            className="absolute bottom-24 right-96 w-28 max-lg:w-24 max-md:w-24 max-sm:w-20 max-sm:right-72"
           />
         </div>
       </div>
