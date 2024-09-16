@@ -18,7 +18,7 @@ export const Projects = () => {
   const [play] = useSound(boopSfx, { volume: 0.25 });
 
   return (
-    <div className="h-screen">
+    <div className="h-screen flex flex-col">
       <nav className="flex justify-between pt-10">
         <motion.div layout={true} layoutId={TITLE_ID}>
           <Link
